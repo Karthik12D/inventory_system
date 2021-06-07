@@ -167,7 +167,6 @@ public class ProductControllerTest {
         MockHttpServletResponse response = result.getResponse();
 
         Assert.assertEquals(HttpStatus.BAD_REQUEST.value(), response.getStatus());
-        Assert.assertTrue(response.getContentAsString().contains("table"));
     }
 
     /**

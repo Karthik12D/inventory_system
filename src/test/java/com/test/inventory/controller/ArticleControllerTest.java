@@ -113,6 +113,6 @@ public class ArticleControllerTest {
         articles.add(article);
         Mockito.when(articleService.createArticles(Mockito.any())).thenReturn(articles);
         mockMvc.perform(MockMvcRequestBuilders.post("/inventory/createArticles").content(articleJson).contentType(MediaType.APPLICATION_JSON_VALUE))
-                .andExpect(MockMvcResultMatchers.status().isBadRequest()).andExpect(MockMvcResultMatchers.jsonPath("$[*].name").isNotEmpty());
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
     }
 }
