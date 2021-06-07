@@ -27,3 +27,8 @@ $ mvn spring-boot:run
 * [Spring boot 2.3.5.RELEASE ](https://projects.spring.io/spring-boot/) - Backend Framework
 * [Maven](https://maven.apache.org/) - Dependency Management
 
+## What other developer can do:
+* They can deploy this application on azure app service with azure sql database. 
+  The github repo can be connected to azure app service, so that whenever you commit on github it will be deployed 
+  on app service automatically
+
